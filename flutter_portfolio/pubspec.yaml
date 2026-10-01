@@ -1,0 +1,52 @@
+name: portfolio_flutter
+description: A professional portfolio built with Flutter
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # UI & Design - CORRECT VERSIONS
+  google_fonts: ^6.0.0
+  flutter_animate: ^4.5.2  # ✅ Correct version (5.0.0 doesn't exist yet)
+
+  # State Management & Navigation
+  provider: ^6.0.0
+  go_router: ^13.0.0
+
+  # Utilities
+  url_launcher: ^6.0.0
+  flutter_dotenv: ^5.0.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/profile.jpeg
+    - assets/images/projects/crime_scope_1.png
+    - assets/images/projects/crime_scope_2.png
+    - assets/images/projects/crime_scope_3.png
+    - assets/images/projects/crime_scope_4.png
+    - assets/images/projects/crime_scope_5.png
+    - assets/icons/
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
